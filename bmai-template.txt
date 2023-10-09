@@ -1,0 +1,25 @@
+(180)
+<4>{8}tl,
+
+# t -> tap          t c/b/x/f l/r
+# s -> star         s c/b/x/f l/r []
+# h -> hold         h c/b/x/f l/r []
+# o -> touch        o h c/b/x/f l/r []
+# oh -> touchhold
+
+# l -> left
+# r -> right
+# c -> chain
+# a -> no head
+# z -> no end
+# x -> special key
+# f -> firework
+# b -> break
+
+# example
+# tl,tr,tl,tr -> left tap, right tap, left tap, right tap
+# sl[1:8], sr[1:8] -> left slide[1:8], right slide[1:8]
+# ol,ol,ol,ol/or,or,or,or -> ...
+# ohl[1:8] -> left touchhold[1:8]
+# eol[1:8] -> left touchhold without head[1:8]
+# ehr[8:8] -> right hold without head and end[1:8]
