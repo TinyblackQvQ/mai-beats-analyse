@@ -1,10 +1,11 @@
-from keyType import keyType
 import json
 
+from keyType import keyType
+
 map = []
-file_path = "output.bmai"
+file_path = "../runtime/output.bmai"
 file = open(file_path, "r")
-out_file_path = "output.bmaic"
+out_file_path = "../runtime/output.bmaic"
 out_file = open(out_file_path, "w+")
 
 raw = ""
@@ -12,7 +13,10 @@ raw = ""
 for item in file.readlines():
     raw += item
 
-raw = raw.replace("\n", "").replace(" ", "").replace("-", "").replace("_", "")
+raw = (raw.replace("\n", "")
+       .replace(" ", "")
+       .replace("-", "")
+       .replace("_", ""))
 
 
 def read_type(char, key: dict) -> str:
@@ -37,10 +41,10 @@ def read_type(char, key: dict) -> str:
 def read_direction(char, key: dict) -> str:
     if char == "l":
         key["direction"] = "left"
-        return
+        return ""
     elif char == "r":
         key["direction"] = "right"
-        return
+        return ""
     else:
         return char
 

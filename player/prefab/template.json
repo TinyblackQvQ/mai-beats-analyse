@@ -1,0 +1,8 @@
+{
+  "name": "template",
+  "assembly": [
+    ":Transform",
+    ":Image",
+    "./script/template.py"
+  ]
+}
